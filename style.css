@@ -45,30 +45,32 @@ html {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex-nav ul li {
+    flex-grow: 1;
   }
   
   @media all and (max-width: 1000px) {
-    .flex-nav ul {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 2;
-    }
-
-    a{
+    .flex-nav ul li {
       width: 50%;
     }
-
-    .social{
+    .flex-nav .social {
       width: 25%;
     }
-  }
+    }
   
   @media all and (max-width: 500px) {
+    .flex-nav ul li {
+    width: 100%;
+  }
+  .flex-nav .social {
+    width: 25%;
   }
 
-/* .social {
-  flex: .5;
-} */
-
+/* .social{
+    width: 25%;
+  } */
+}
 
